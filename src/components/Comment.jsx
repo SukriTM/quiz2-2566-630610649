@@ -1,3 +1,5 @@
+import userImagePath from "@/libs/comments"
+
 export const Comment = ({
   userImagePath,
   username,
@@ -7,8 +9,17 @@ export const Comment = ({
 }) => {
   return (
     <div>
-      your code here...
-      {/* map-loop render Reply component here */}
+      <div>{this.props.userImagePath}</div>
+      <div>{this.props.username}</div>
+      <div>{this.props.commentText}</div>
+      <div>{this.props.likeNum}</div>
+      <div>{this.props.replies}</div>
     </div>
   );
 };
+
+/*if (likeNum >= 0){
+display number of like(thumbs up and likes)
+}else{
+hide likeNum
+};*/

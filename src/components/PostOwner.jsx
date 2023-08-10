@@ -1,3 +1,3 @@
 export const PostOwner = ({}) => {
-  return <div>Your code here...</div>;
+  return <div>{this.props.profileImages}</div>;
 };
